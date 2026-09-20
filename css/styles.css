@@ -170,29 +170,21 @@ img {
 }
 
 .hello__portrait {
-    display: grid;
-    place-items: center;
-    min-height: 320px;
+    margin: 0;
+    aspect-ratio: 4 / 5;
+    overflow: hidden;
     border-radius: 1.6rem;
     background:
         radial-gradient(circle at 30% 20%, #f7d7b8, transparent 45%),
         linear-gradient(160deg, #e8d3b4, #c9b49a 55%, #8ea3a8);
-    color: var(--paper);
-    text-align: center;
 }
 
-.hello__portrait span {
-    font-family: Syne, sans-serif;
-    font-size: 4.2rem;
-    font-weight: 800;
-    line-height: 1;
-}
-
-.hello__portrait p {
-    margin: 0.4rem 0 0;
-    font-size: 0.85rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
+.hello__portrait img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center bottom;
 }
 
 .hello__copy h2 {
@@ -407,7 +399,9 @@ footer {
     }
 
     .hello__portrait {
-        min-height: 240px;
+        max-width: 360px;
+        margin-inline: auto;
+        width: 100%;
     }
 
     .hello__copy p:last-child,
