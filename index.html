@@ -2,39 +2,150 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Felipe Marques - Portfólio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Felipe A. Marques — desenvolvedor web, Java, Spring e JavaScript.">
+    <title>Felipe Marques | Portfólio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,700;1,9..144,800&family=Outfit:wght@400;500;600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <nav id="inicio">Inicio</nav>
-        <nav id="sobre">Sobre</nav>
-        <nav id="experiencias">Experiências</nav>
-        <nav id="formacao">Formação</nav>
-        <nav id="projetos">Projetos</nav>
-        <nav id="conhecimentos">Conhecimentos</nav>
-        <nav id="contato">Contato</nav>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <header id="inicio" class="masthead">
+        <p class="masthead__brand">
+            <span>Portfólio</span>
+            Felipe A. Marques
+        </p>
+        <p class="masthead__year">Ano 2026</p>
+        <p class="masthead__role">Desenvolvedor web</p>
+        <nav class="site-nav" aria-label="Seções">
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#experiencias">Experiências</a>
+            <a href="#formacao">Formação</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#conhecimentos">Conhecimentos</a>
+            <a href="#contato">Contato</a>
+        </nav>
     </header>
 
-    <main>
-        <section id="inicio">
-            <h1>Felipe Marques</h1>
-            <h2>Desenvolvedor Web</h2>
-            <P>Apaixonado por tecnologia e desenvolvimento, Sempre em busca de novos desafios e oportunidades para crescer e aprender. Com 1 ano de experiência em desenvolvimento web, tenho conhecimento em Java, Spring, JavaScript, React, Node.js e SQL.</P>
+    <main id="conteudo">
+        <section class="hero" aria-labelledby="titulo-portfolio">
+            <p class="hero__year" aria-hidden="true">✦ 2026 ✦</p>
+            <h1 id="titulo-portfolio">Portfólio</h1>
         </section>
-        <section id="sobre">
-            <h2>Sobre mim</h2>
-            <p>Sou um futuro Engenheiro de Software, com 2 anos de experiência em desenvolvimento web. Atualmente Trabalho em diversos sistemas dentro do Exercito Brasileiro Alem de diversos projetos pessoais.</p>
-            <p>Meu foco é sempre entregar o melhor produto possível, sempre em busca de melhorar minhas habilidades e conhecimentos.</p>
-            <p>Procuro um ambiente que me auxilie no meu processo de aprendizado e crescimento profissional.</p>
-        </section>
-        <section id="experiencias">
-            <h2>Experiências</h2>
 
+        <ul class="tags" aria-label="Tecnologias">
+            <li>Java</li>
+            <li>Spring</li>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>MySQL</li>
+            <li>Oracle</li>
+            <li>Docker</li>
+            <li>Git</li>
+        </ul>
+
+        <section id="sobre" class="hello">
+            <div class="hello__portrait" aria-hidden="true">
+                <span>FM</span>
+                <p>Foto em breve</p>
+            </div>
+            <div class="hello__copy">
+                <h2>Hello!</h2>
+                <p class="hello__lead">Eu me chamo Felipe Marques e estou em busca de uma vaga como desenvolvedor.</p>
+                <p>Cursando bacharelado em Ciência da Computação no UniCEUB e formado em desenvolvimento full stack pela Trybe. Trabalho com Java, Spring, JavaScript, React, Node.js e bancos SQL, e quero aplicar isso no dia a dia de um time de software.</p>
+            </div>
+        </section>
+
+        <section class="info" aria-label="Currículo">
+            <article id="experiencias">
+                <h2>Experiências</h2>
+
+                <div class="entry">
+                    <p class="entry__period">Fevereiro 2026 – agora</p>
+                    <h3>Estagiário de Desenvolvimento Java</h3>
+                    <p class="entry__place">Mirante Tecnologia — Exército Brasileiro</p>
+                    <p>APIs REST com Java e Spring Boot, persistência com Oracle, interfaces com Angular, correção de bugs e versionamento no GitLab.</p>
+                </div>
+
+                <div class="entry">
+                    <p class="entry__period">Junho 2025 – novembro 2025</p>
+                    <h3>Operador Pleno de Monitoração</h3>
+                    <p class="entry__place">Global Web NOC</p>
+                    <p>Monitoramento de sistemas e infraestrutura, triagem de incidentes e trabalho com equipes técnicas em ambiente de TI.</p>
+                </div>
+            </article>
+
+            <article id="formacao">
+                <h2>Formação</h2>
+
+                <div class="entry">
+                    <p class="entry__period">2025 – 2028</p>
+                    <h3>Bacharelado em Ciência da Computação</h3>
+                    <p class="entry__place">Centro Universitário de Brasília (UniCEUB)</p>
+                </div>
+
+                <div class="entry">
+                    <p class="entry__period">2023 – 2024</p>
+                    <h3>Desenvolvimento Web Full Stack</h3>
+                    <p class="entry__place">Trybe</p>
+                </div>
+
+                <div class="entry">
+                    <p class="entry__period">2020 – 2022</p>
+                    <h3>Ensino Médio + Técnico em Áudio e Vídeo</h3>
+                    <p class="entry__place">Instituto Federal de Goiás (IFG)</p>
+                </div>
+            </article>
+
+            <aside class="sidebar">
+                <section id="conhecimentos">
+                    <h2>Conhecimentos</h2>
+                    <ul class="pills">
+                        <li>Java / Spring</li>
+                        <li>JavaScript</li>
+                        <li>TypeScript</li>
+                        <li>React / Node.js</li>
+                        <li>MySQL / Oracle</li>
+                        <li>Docker / Git</li>
+                        <li>HTML / CSS</li>
+                        <li>Inglês intermediário</li>
+                    </ul>
+                </section>
+
+                <section id="contato">
+                    <h2>Contato</h2>
+                    <p><a href="mailto:Lipemarxgyn@gmail.com">Lipemarxgyn@gmail.com</a></p>
+                    <p><a href="tel:+5561992717499">(61) 99271-7499</a></p>
+                </section>
+            </aside>
+        </section>
+
+        <section id="projetos" class="project">
+            <div class="project__grid" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <article class="project__copy">
+                <p class="project__index">.01</p>
+                <h2>Projeto</h2>
+                <p class="project__stack">Em breve</p>
+                <p>Primeiro caso em destaque em breve — trabalhos da Trybe, pessoais e do estágio.</p>
+            </article>
         </section>
     </main>
-    
+
     <footer>
-        <p>© 2026 Felipe Marques.</p>
+        <p>© 2026 Felipe A. Marques.</p>
     </footer>
 </body>
 </html>
