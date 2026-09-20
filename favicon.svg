@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="FM">
+  <circle cx="64" cy="64" r="58" fill="#f3eee4" stroke="#1a1714" stroke-width="8"/>
+  <path fill="#c45c26" d="M64 18 67.8 36.8 86 40.5 67.8 44.2 64 63 60.2 44.2 42 40.5 60.2 36.8Z"/>
+  <text x="64" y="94" text-anchor="middle" font-family="Arial Black, Helvetica, sans-serif" font-size="44" font-weight="800" fill="#1a1714" letter-spacing="-3">FM</text>
+</svg>
